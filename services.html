@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand px-2" href="#">Shades Clinic</a>
+      <a class="navbar-brand px-2" href="index.html">Shades Clinic</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -93,7 +93,7 @@
                 <div class="container" style="padding-bottom: 10px;">
                     <div class="row">
                       <div class="col text-center">
-                        <button class="mainbutton" style="width: 100px;">Prices</button>
+                        <button class="mainbutton" style="width: 100px;" data-toggle="modal" data-target = "#pricesModal">Prices</button>
                       </div>
                     </div>
                   </div>
@@ -102,7 +102,65 @@
         </div>
     </div>
 
-    
+    <div class="modal fade" id="pricesModal" tabindex="-1" role="dialog" aria-labelledby="pricesModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pricesModalLongTitle">Sample Prices for Cosmetic Services</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="border: 0px;">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Service</th>
+               
+                  <th scope="col">Price</th>
+            
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+         
+                  <td>Injectibles</td>
+                  <td>$300</td>
+         
+                </tr>
+                <tr>
+                
+                  <td>Wrinkle treatment</td>
+                  <td>$400</td>
+     
+                </tr>
+                <tr>
+             
+                  <td>Laser treatment</td>
+                  <td>$600</td>
+         
+                </tr>
+                <tr>
+             
+                  <td>Hyperpigmentation treatment</td>
+                  <td>$650</td>
+         
+                </tr>
+                <tr>
+             
+                  <td>Lipoma removal</td>
+                  <td>$500</td>
+         
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class=" otherbutton" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     
     
@@ -125,6 +183,25 @@
    
         .mainbutton:hover{
           background-color: #845134 !important;
+    
+        }
+
+
+        .otherbutton {
+          background-color: #FFE5DC !important;
+          border: 0;
+          padding: 10px;
+          padding-left: 15px;
+          padding-right: 15px;
+          color: #A46946;
+          font-size: small;
+          border-radius: 25px;
+        }
+
+   
+        .otherbutton:hover{
+          background-color: #f7d0c3 !important;
+          color: #845134;
     
         }
 
